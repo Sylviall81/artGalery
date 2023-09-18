@@ -21,7 +21,7 @@ class AuthTest extends TestCase
         $this->postJson('api/register', [
             'name' => 'Elena',
             'email'=>'e.mail@gmail.com',
-            'password' => Hash::make ('Ee123456789*')
+            'password' => Hash::make ('123456789')
         ]);
 
         $this->assertCount(1, User::all());
